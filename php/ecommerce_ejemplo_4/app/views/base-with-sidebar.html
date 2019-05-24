@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="col s12 m4 l3"> 
+     	{% include 'sidebar.html' %}
+    </div>
+    <div class="col s12 m8 l9"> 
+    	{% block main %}
+        <!-- Teal page content  -->
+    	{% endblock %}
+    </div>
+</div>
+{% endblock %}

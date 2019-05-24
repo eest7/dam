@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>{% block title %}{% endblock %} - My Webpage</title>
+
+  <!-- CSS  -->
+  <link href="assets/css/material-icons.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  {% block styles %}{% endblock %}
+</head>
+<body>
+    <!-- Navbar goes here -->
+    {% include 'navbar.html' %}
+    {% include 'menu.html' %}
+
+    {% block content %}
+    <!-- Teal page content  -->
+    {% endblock %}
+
+         
+
+  {% include 'footer.html' %}
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="assets/js/materialize.js"></script>
+  <script src="assets/js/init.js"></script>
+  {% block scripts %}{% endblock %}
+  </body>
+</html>

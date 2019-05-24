@@ -1,0 +1,13 @@
+{
+"database": {
+    "dsn": "mysql",
+    "host": "localhost",
+    "user": "root",
+    "password": "",
+    "database": "ecommerce",
+    "charset":  "utf8"
+  },
+"upload_folder": "",
+"assets": null,
+"templates": null
+}

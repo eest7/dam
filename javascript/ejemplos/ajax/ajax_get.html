@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax</title>
+    <style>
+    .ocultar{
+        display: none
+    }
+    </style>
+</head>
+<body>
+    <h1>Ajax</h1>
+    <a href="index.html">volver</a>
+    <p>
+        Oprimir la tecla "F12" y selecionar el tab de consola,
+        para ver los mensajes en la consola.
+        Podés ver los requests en el tab "Red" o "Network"
+    </p>
+    <h2>Buscar Producto por ID: Uso de Ajax Método GET</h2>
+    <form id="formUno">
+        <input type="text" class="formInput" placeholder="ingresar id" name="id">
+        <button type="submit" class="btn">submit</button>
+        <p class="formMsg"></p>
+    </form>
+    <h2>Buscar Producto por ID: Uso de Ajax Método GET, recorre objeto para formar el querystring</h2>
+    <form id="formDos">
+        <input type="text" class="formInput" placeholder="ingresar id" name="id">
+        <button type="submit" class="btn">submit</button>
+        <p class="formMsg"></p>
+    </form>
+
+    <h3>Lista de Productos</h3>
+    <img id="loading" src="../img/loading.gif" alt="" class="ocultar">
+    <div id="listaProductos" class="ocultar"></div>
+    <script src="js/ejemplo_2.js"></script>
+</body>
+</html>

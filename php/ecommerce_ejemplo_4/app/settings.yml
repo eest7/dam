@@ -1,0 +1,15 @@
+database:
+  dsn:
+  host:
+  user:
+  password:
+  database:
+  charset:
+upload_folder:
+assets:
+  js:
+  css:
+  img:
+templates: 
+  core: '/../views'
+    
