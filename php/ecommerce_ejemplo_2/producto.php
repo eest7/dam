@@ -9,7 +9,7 @@ $request = resolveRequest();
 if ($request['method']==='get')
 {
 	$parametros = $_GET;
-    $mysqli = new mysqli("localhost", "root", "", "ecommerce", 3306);
+    $mysqli = new mysqli("mysql", "root", "root", "ecommerce", null);
     if ($mysqli->connect_errno) {
         echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
     }
@@ -38,18 +38,18 @@ if ($request['method']==='get')
 
 if ($request['method']==='post')
 {
-	$mysqli = new mysqli("localhost", "root", "", "ecommerce", 3306);
+	$mysqli = new mysqli("mysql", "root", "root", "ecommerce", null);
 	if ($mysqli->connect_errno) {
 		echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 	}
-	
+
 	// validar el texto que llega para prevenir inyecciones de sql
 	// $mysqli->error
 	if (isset($parametros['nombre']) && isset($parametros['cantidad']) && isset($parametros['precio']) && isset($parametros['tipo']))
 	{
 		$insertQuery = "INSERT INTO product (name, quantity, price, product_type_id) VALUES (";
 		$insertQuery .= "'".$parametros['nombre']."'".','.$parametros['cantidad'].','.$parametros['precio'].','.$parametros['tipo'].')';
-	
+
 		if($mysqli->query($insertQuery) === TRUE)
 		{
 			$respuesta = [

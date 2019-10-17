@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET")
 {
 
     $parametros = $_GET;
-    $mysqli = new mysqli("localhost", "root", "", "ecommerce", 3306);
+    $mysqli = new mysqli("mysql", "root", "root", "ecommerce", null);
     if ($mysqli->connect_errno) {
         echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
     }
@@ -33,7 +33,6 @@ if ($_SERVER['REQUEST_METHOD'] == "GET")
             "status"=> 200,
             "response" => $data
         ];
-        sleep(5);
         echo json_encode($respuesta);
     } else {
         $respuesta = [
@@ -43,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET")
         sleep(5);
         echo json_encode($respuesta);
     }
-    
+
 }
 
 if ($_SERVER['REQUEST_METHOD'] == "POST")
@@ -56,11 +55,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
         $parametros = $_POST;
     }
 
-    $mysqli = new mysqli("localhost", "root", "", "ecommerce", 3306);
+    $mysqli = new mysqli("mysql", "root", "root", "ecommerce", null);
     if ($mysqli->connect_errno) {
         echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
     }
-    
+
     // validar el texto que llega para prevenir inyecciones de sql
     // $mysqli->error
     if (isset($parametros['nombre']) && isset($parametros['cantidad']) && isset($parametros['precio']) && isset($parametros['tipo']))
@@ -89,6 +88,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
         ];
         echo json_encode($respuesta);
     }
-    
+
 }
 
