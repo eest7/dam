@@ -1,0 +1,146 @@
+:root {
+  --sidebar-width: 300px;
+  --sidebar-bg: #1e222b;
+  --sidebar-bg-ligth: #282e3a;
+}
+body {
+  background-color: var(--white);
+  background-image: url("./assets/images/main-bg.png");
+  background-repeat: repeat;
+}
+
+/* Main layout */
+.dam-container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content"
+    "sidebar content";
+}
+@media (max-width: 768px) {
+  .dam-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "content"
+      "content";
+  }
+}
+.dam-container .dam-sidebar {
+  grid-area: sidebar;
+}
+.dam-container .dam-header {
+  grid-area: header;
+}
+.dam-container .dam-content {
+  grid-area: content;
+}
+/* End main layout */
+
+/* Header */
+.dam-header {
+  justify-content: space-between;
+}
+/* End header */
+
+/* Aside */
+.dam-sidebar {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .dam-sidebar {
+    display: none;
+  }
+}
+.dam-sidebar .first-sidebar {
+  width: 75px;
+  background-color: var(--sidebar-bg);
+}
+.dam-sidebar .second-sidebar {
+  width: calc(var(--sidebar-width) - 75px);
+  background-color: var(--sidebar-bg-ligth);
+}
+.dam-sidebar .first-sidebar .languages {
+  padding: 15px;
+}
+.dam-sidebar .first-sidebar .languages .item {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
+  z-index: 1;
+}
+.dam-sidebar .first-sidebar .languages .item::after {
+  content: "";
+  width: calc(100% + 20px);
+  height: 100%;
+  position: absolute;
+  right: -15px;
+  z-index: -1;
+  border-radius: 10px 0 0 10px;
+  transition: background-color 0.4s ease;
+}
+.dam-sidebar .first-sidebar .languages .item.active::after,
+.dam-sidebar .first-sidebar .languages .item:hover::after {
+  background-color: #282e3a;
+}
+.dam-sidebar .first-sidebar .languages .item img {
+  max-width: 100%;
+}
+
+.dam-sidebar .second-sidebar {
+  overflow-y: auto;
+}
+.dam-sidebar .second-sidebar a {
+  padding: 10px 15px;
+  margin-bottom: 5px;
+}
+.dam-sidebar .second-sidebar a.active {
+  background-color: var(--sidebar-bg);
+}
+/* End Aside */
+
+/* App-Bar */
+.dam-header {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--light);
+}
+.dam-header h1 {
+  margin-bottom: 0;
+}
+/* End App-Bar */
+
+/* Content */
+.dam-content {
+  overflow-y: auto;
+  padding: 1.5rem;
+}
+/* End Content */
+
+/* Practice section */
+.practice-statement p:last-of-type {
+  margin-bottom: 0;
+}
+.practice-content .row .col {
+  display: flex;
+}
+.practice-content .row .col .card {
+  flex: 1 1 auto;
+}
+/* End practice section */
+
+/* Overloads */
+.card {
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D.A.M. - Js | Funciones</title>
+    <link
+      rel="stylesheet"
+      href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="dam-container">
+      <aside class="dam-sidebar">
+        <div class="first-sidebar">
+          <nav class="languages">
+            <a href="/java-script/" class="item active">
+              <img src="/assets/images/js-logo.png" alt="JavaScript Logo" />
+            </a>
+            <a href="/php/" class="item">
+              <img src="/assets/images/php-logo.png" alt="Php Logo" />
+            </a>
+          </nav>
+        </div>
+        <nav class="second-sidebar main-nav"></nav>
+      </aside>
+      <header class="dam-header shadow">
+        <h1 class="h4">Funciones</h1>
+        <a href="./index.html" class="btn btn-info">
+          Ir a la teoria
+        </a>
+      </header>
+      <section class="dam-content practice-content">
+        <div class="row">
+          <!-- Exercise 1 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Es palíndromo?
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <i>
+                    Definir una función que determine si la cadena de texto que
+                    se le pasa como parámetro es un palíndromo, es decir, si se
+                    lee de la misma forma desde la izquierda y desde la derecha.
+                    Ejemplo de palíndromo complejo: "La ruta nos aporto otro
+                    paso natural".
+                  </i>
+                </p>
+                <p class="card-text">
+                  Al presionar el botón pedir al usuario que ingrese una cadena
+                  de texto y luego mostrar por pantalla el resultado devuelto
+                  por la función.
+                </p>
+                <button
+                  type="button"
+                  id="btn-exercise1"
+                  class="btn btn-primary"
+                >
+                  Ingresar y validar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 1 -->
+          <!-- Exercise 2 -->
+          <div class="col col-sm-6 col-md-8">
+            <div class="card">
+              <div class="card-header">
+                Crash Bandicoot
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Nos contratan para desarrollar el menú del juego "Crash
+                  Bandicoot":
+                </p>
+                <p class="card-text">
+                  Al presionar el boton <i>"Start"</i> debemos imprimir por
+                  consola las opciones del menú principal, las opciones son:
+                  <br />
+                  <i>
+                    "1- Start", "2- Load game", "3- Password", "4- Options, "5-
+                    Leave Game"
+                  </i>
+                  <br />
+                  Y luego usar la función
+                  <code class="highlighter-rouge">prompt()</code> para que el
+                  jugador ingrese la opción con la que quiere interactuar.
+                </p>
+                <p class="card-text">
+                  Una vez que el jugador ingresa la opción debemos imprimir por
+                  consola cada submenú, ó la acción que se describe en la
+                  opción:
+                  <br />
+                  1) <strong>Start:</strong> acción: imprimir en consola
+                  <i>"Loading...."</i>
+                  <br />
+                  2) <strong>Load Game:</strong> acción: imprimir en consola
+                  <i>"Reading memory card...."</i>
+                  <br />
+                  3) <strong>Password:</strong> acción: imprimir submenú
+                  <i>"1- Enter Password", 2- "main menu"</i>
+                  <br />
+                  4) <strong>Options:</strong> acción: imprimir submenú
+                  <i>"1- Sound", "2- Language", "3- difficulty"</i>
+                </p>
+                <button
+                  type="button"
+                  id="btn-exercise2"
+                  class="btn btn-primary"
+                >
+                  Start
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 2 -->
+          <!-- Exercise 3 -->
+          <div class="col col-sm-6 col-md-8">
+            <div class="card">
+              <div class="card-header">
+                NBA JAM
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  La empresa de Midway está creando el "NBA JAM", y nos pide que
+                  calculemos los puntos cuando los jugadores encestan. Recordá
+                  que tenemos dos formas que enceste en el juego. La primera es
+                  por fuera del área (triple) son 3 puntos, y la segunda es
+                  forma es dentro del área (doble) son 2 puntos. Cada juego está
+                  compuesto por dos equipos.
+                </p>
+                <p class="card-text">
+                  Al presionar el boton <i>"Start"</i> tendrás que calcular los
+                  puntos de ambos y mostrar quién ganó.
+                </p>
+                <p class="card-text">
+                  A) Crear dos arrays con los puntos de cada equipo, cada array
+                  deberá tener al menos 40 ítems con un valor entre 2 y 3
+                  numérico.
+                  <br />
+                  B) Sumar el total de puntos de cada equipo
+                  <br />
+                  C) Comparar el total de puntos e imprimir por consola quién
+                  ganó
+                </p>
+                <button
+                  type="button"
+                  id="btn-exercise3"
+                  class="btn btn-primary"
+                >
+                  Start
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 3 -->
+          <!-- Exercise 4 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Escaneo de strings
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <i>
+                    Definir una función que muestre información sobre una cadena
+                    de texto que se le pasa como argumento. A partir de la
+                    cadena que se le pasa, la función determina si esa cadena
+                    está formada sólo por mayúsculas, sólo por minúsculas o por
+                    una mezcla de ambas.
+                  </i>
+                </p>
+                <p class="card-text">
+                  Al presionar el botón pedir al usuario que ingrese una cadena
+                  de texto y luego mostrar por pantalla el resultado devuelto
+                  por la función.
+                </p>
+                <button
+                  type="button"
+                  id="btn-exercise4"
+                  class="btn btn-primary"
+                >
+                  Ingresar una palabra
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 4 -->
+          <!-- Exercise 5 -->
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                Contra
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Somos parte del equipo de Konami que desarrolla el juego
+                  <i>"Contra"</i>, y tenemos que crear una función que imprima
+                  por consola el resumen de la partida jugada de cada stage.
+                </p>
+                <div class="row">
+                  <div class="col col-md-6">
+                    <p class="card-text">
+                      La función deberá recibir 5 parámetros, los parámetros
+                      son:
+                      <br />
+                      1) nombreJugador (valor string)
+                      <br />
+                      2) vidaRestante (valor number, entre 1 y 1000)
+                      <br />
+                      3) puntos (valor number, entre 0 y 99999)
+                      <br />
+                      4) stage (valor number, entre 1 y 8)
+                      <br />
+                      5) destruccionesPorSección (array de tipo numbers)
+                      <br />
+                    </p>
+                  </div>
+                  <div class="col col-md-6">
+                    <p class="card-text">
+                      Ejemplo de Resumen
+                      <br />
+                      <i>
+                        -----------------
+                        <br />
+                        Jugador T400
+                        <br />
+                        Vida restante 54%
+                        <br />
+                        Total Puntos 2054
+                        <br />
+                        Stage Jungle
+                        <br />
+                        Destrucciones Totales 250
+                        <br />
+                        -----------------------
+                      </i>
+                    </p>
+                  </div>
+                </div>
+                <p class="card-text">
+                  Al presionar el boton <i>"Start"</i> pedir los datos
+                  necesarios y...
+                </p>
+                <p class="card-text">
+                  1) La función deberá validar el tipo y valor de cada parámetro
+                  <br />
+                  2) El valor a mostrar de la vida restante, debe ser el
+                  porcentaje de la vida.
+                  <i>
+                    Ej: si el valor del parámetro es 100 eso representa al 10%
+                    de la vida.
+                  </i>
+                  <br />
+                  3) El valor del stage puede ser entre 1 y 8, y deberá
+                  mostrarse en el resumen el nombre del stage: <br />
+                  <i>
+                    1. Jungle <br />
+                    2. Base <br />
+                    3. Waterfall <br />
+                    4. Base <br />
+                    5. Snow <br />
+                    6. Energy <br />
+                    7. Hangar <br />
+                    8. Alien's <br />
+                  </i>
+                  4) El valor de <i>"Destrucciones Totales"</i> deberá ser
+                  calculado sumando todas las destrucciones por sección.
+                </p>
+                <button
+                  type="button"
+                  id="btn-exercise5"
+                  class="btn btn-primary"
+                >
+                  Start
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 5 -->
+          <!-- Exercise 6 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Par o Impar
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <i>
+                    Escribir el código de una función a la que se pasa como
+                    parámetro un número entero y devuelve como resultado una
+                    cadena de texto que indica si el número es par o impar.
+                  </i>
+                </p>
+                <p class="card-text">
+                  Al presionar el botón pedir al usuario un numero y luego
+                  mostrar por pantalla el resultado devuelto por la función.
+                </p>
+                <button
+                  type="button"
+                  id="btn-exercise6"
+                  class="btn btn-primary"
+                >
+                  Ingresar numero
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 6 -->
+        </div>
+      </section>
+    </main>
+    <script src="./practice.js"></script>
+  </body>
+</html>

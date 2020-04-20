@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D.A.M. - Js | E/s de datos</title>
+    <link
+      rel="stylesheet"
+      href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="dam-container">
+      <aside class="dam-sidebar">
+        <div class="first-sidebar">
+          <nav class="languages">
+            <a href="/java-script/" class="item active">
+              <img src="/assets/images/js-logo.png" alt="JavaScript Logo" />
+            </a>
+            <a href="/php/" class="item">
+              <img src="/assets/images/php-logo.png" alt="Php Logo" />
+            </a>
+          </nav>
+        </div>
+        <nav class="second-sidebar main-nav">
+          <a href="/java-script/data-types/" class="nav-link">Tipos de datos</a>
+          <a href="/java-script/conditionals/" class="nav-link">
+            Condicionales
+          </a>
+          <a href="/java-script/functions/" class="nav-link">Funciones</a>
+          <a href="/java-script/ouput-input/" class="nav-link active">
+            Entrada y Salida
+          </a>
+          <a href="/java-script/iterators/" class="nav-link">Iteradores</a>
+          <a href="/java-script/callbacks/" class="nav-link">Callbacks</a>
+          <a href="/java-script/closures/" class="nav-link">Closures</a>
+          <a href="/java-script/events/" class="nav-link">Eventos</a>
+          <a href="/java-script/ajax/" class="nav-link">Ajax</a>
+        </nav>
+      </aside>
+      <header class="dam-header shadow">
+        <h1 class="h4">E/S de Datos</h1>
+        <a href="./practice.html" class="btn btn-success">
+          Ir a la practica
+        </a>
+      </header>
+      <section class="dam-content">
+        <div class="card">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col col-sm-12 col-md-7">
+                <h1 class="h4">
+                  Salida: <code class="highlighter-rouge">alert()</code> y
+                  <code class="highlighter-rouge">console</code>
+                </h1>
+                <p>
+                  Algo muy normal al momento de hacer, por ejemplo debug de tu
+                  codigo, es usar a un personaje muy famoso en el mundo de js,
+                  como es <strong>console</strong> ya que con este objeto,
+                  podemos imprimir en la consola del navegador cualquier tipo de
+                  dato, esto lo hacemos usando la palabra reservada
+                  <strong>console</strong> seguido de su propiedad (hay muchas,
+                  en los ejemplos mostramos las tres mas comunes) y a
+                  continuacion el o los datos.
+                </p>
+                <p>
+                  Si console nos ayuda, por ejemplo a hacer debug,
+                  <strong>alert() </strong>nos ayuda a comunicar mensajes que no
+                  requieren ninguna respuesta por parte del usuario, excepto el
+                  reconocimiento del mensaje.
+                </p>
+              </div>
+              <div class="col col-sm-12 col-md-5">
+                <pre
+                  class="lang-javascript"
+                ><code class="lang-javascript">/* Alert */
+const mensaje = 'Hola mundo!!!';
+alert(mensaje);
+alert('Otro hola mundo!!!');
+/* Console */
+const logVar = 'Log'; 
+console.log(logVar);
+console.error('error', 'otro error', logVar);
+console.warn('warning!!!');
+                </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col col-sm-12 col-md-5">
+                <pre
+                  class="lang-javascript"
+                ><code class="lang-javascript">/* Prompt */
+const nombre = prompt('Cual es tu nombre?');
+const curso = parseInt(prompt('Y tu curso?'));
+console.log('Oh! un gusto ' + nombre + '!!!');
+console.log('Bienvenido a ' + curso + '!!!');
+/* Confirm */
+const eliminar = confirm('Desea eliminar el registro?');
+if (eliminar) {
+  console.log('Eliminado');
+} else {
+  console.log('No eliminado');
+}
+                </code></pre>
+              </div>
+              <div class="col col-sm-12 col-md-7">
+                <h1 class="h4">
+                  Entrada: <code class="highlighter-rouge">prompt()</code> y
+                  <code class="highlighter-rouge">confirm()</code>
+                </h1>
+                <p>
+                  Para la entrada de datos del lado del usuario, para empezar,
+                  podemos usar la funcion <strong>prompt()</strong> la misma, a
+                  diferencia del alert, añade un text field para ingresar datos
+                  de manera opcional, luego los retorna para poder manipular ese
+                  dato dentro de nuestro script
+                </p>
+                <p>
+                  Nota: es importante saber que prompt retorna siempre un
+                  <i>string</i> y si se desea manipular numeros con prompt va a
+                  ser necesario <strong>castear</strong> el dato retornado. En
+                  el caso del ejemplo se muestra el casteo con
+                  <strong>parseInt()</strong> a un tipo de dato entero.
+                </p>
+                <p>
+                  A menudo en determinados casos es necesario que el usuario
+                  verifique o acepte algo. Para estos casos podemos utilizar el
+                  metodo <strong>confirm()</strong> que muestra un cuadro de
+                  diálogo con un mensaje específico, junto con un botón
+                  <strong>"Aceptar"</strong> y un botón
+                  <strong>"Cancelar"</strong>. Este metodo recibe el mensaje y
+                  retorna <code class="highlighter-rouge">true</code> si el
+                  usuario hizo clic en <strong>"Aceptar"</strong> y
+                  <code class="highlighter-rouge">false</code> en caso
+                  contrario.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/prism.min.js"></script>
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>

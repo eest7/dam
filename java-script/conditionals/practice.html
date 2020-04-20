@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D.A.M. - Js | Condicionales</title>
+    <link
+      rel="stylesheet"
+      href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="dam-container">
+      <aside class="dam-sidebar">
+        <div class="first-sidebar">
+          <nav class="languages">
+            <a href="/java-script/" class="item active">
+              <img src="/assets/images/js-logo.png" alt="JavaScript Logo" />
+            </a>
+            <a href="/php/" class="item">
+              <img src="/assets/images/php-logo.png" alt="Php Logo" />
+            </a>
+          </nav>
+        </div>
+        <nav class="second-sidebar main-nav"></nav>
+      </aside>
+      <header class="dam-header shadow">
+        <h1 class="h4">Condicionales</h1>
+        <a href="./index.html" class="btn btn-info">
+          Ir a la teoria
+        </a>
+      </header>
+      <section class="dam-content practice-content">
+        <div class="row">
+          <!-- Exercise 1 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Ingresar edad
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Al presionar el botón, debemos lograr tomar la edad ingresada
+                  en el text field (id:
+                  <code class="highlighter-rouge">#input-exercise1</code>) e
+                  informar si la persona es mayor de edad sino informar que es
+                  menor de edad.
+                </p>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-exercise1"
+                    placeholder="Edad"
+                  />
+                </div>
+                <button
+                  type="button"
+                  id="btn-exercise1"
+                  class="btn btn-primary"
+                >
+                  Ingresar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 1 -->
+          <!-- Exercise 2 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Ingresar edad
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Al presionar el botón, debemos lograr tomar la edad ingresada
+                  en el text field (id:
+                  <code class="highlighter-rouge">#input-exercise2</code>) e
+                  informar si la persona es o no es adolescente, edad entre 13 y
+                  17 años (inclusive).
+                </p>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-exercise2"
+                    placeholder="Edad"
+                  />
+                </div>
+                <button
+                  type="button"
+                  id="btn-exercise2"
+                  class="btn btn-primary"
+                >
+                  Ingresar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 2 -->
+          <!-- Exercise 3 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Ingresar edad
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Al presionar el botón, debemos lograr tomar la edad ingresada
+                  en el text field (id:
+                  <code class="highlighter-rouge">#input-exercise3</code>) e
+                  informar si la persona es mayor de edad (mas de 18 años) o
+                  adolescente (entre 13 y 17 años) o niño (menor a 13 años).
+                </p>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-exercise3"
+                    placeholder="Edad"
+                  />
+                </div>
+                <button
+                  type="button"
+                  id="btn-exercise3"
+                  class="btn btn-primary"
+                >
+                  Ingresar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 3 -->
+          <!-- Exercise 4 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Evaluar nota
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Al presionar el boton, asignar una nota
+                  <strong>random</strong> al examen y mostar:
+                  <i>"Excelente"</i> para notas igual a 9 o 10,
+                  <i>"Aprobo"</i>
+                  para notas mayores a 4,
+                  <i>"Vamos, la proxima se puede"</i> para notas menores a 4.
+                </p>
+                <button
+                  type="button"
+                  id="btn-exercise4"
+                  class="btn btn-primary"
+                >
+                  Asignar nota
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 4 -->
+          <!-- Exercise 5 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Ingrese la hora del día
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Al ingresar una hora en el text field (id:
+                  <code class="highlighter-rouge">#input-exercise5</code>),
+                  informar: si está entre las 7 y las 11 <i>"Es de mañana"</i>,
+                  entre las 12 y las 20 <i>"Es de tarde"</i>, sino
+                  <i>"Es de noche"</i>.
+                </p>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-exercise5"
+                    placeholder="Ingrese hora del dia"
+                  />
+                </div>
+                <button
+                  type="button"
+                  id="btn-exercise5"
+                  class="btn btn-primary"
+                >
+                  Mostrar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 5 -->
+          <!-- Exercise 6 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Evaluar accion
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Al presionar el boton, se desplegara un
+                  <code class="highlighter-rouge">confirm()</code> detectar que
+                  accion se tomo. Notificarlo por
+                  <code class="highlighter-rouge">alert()</code>.
+                </p>
+                <button
+                  type="button"
+                  id="btn-exercise6"
+                  class="btn btn-primary"
+                >
+                  Mostrar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 6 -->
+          <!-- Exercise 7 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Elija un mes
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Al al seleccionar un mes (id:
+                  <code class="highlighter-rouge">#input-exercise7</code>) y
+                  presionar el botón, debemos informar:
+                  <br />
+                  - Si es Febrero: <i>"Este mes no tiene más de 29 días"</i>
+                  <br />
+                  - Si no es Febrero: <i>"Este mes tiene 30 o más días"</i>.
+                </p>
+                <div class="form-group">
+                  <select class="form-control" id="input-exercise7">
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                  </select>
+                </div>
+                <button
+                  type="button"
+                  id="btn-exercise7"
+                  class="btn btn-primary"
+                >
+                  Mostrar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 7 -->
+          <!-- Exercise 8 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Elija un mes
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Al al seleccionar un mes (id:
+                  <code class="highlighter-rouge">#input-exercise8</code>) y
+                  presionar el botón, debemos informar:
+                  <br />
+                  - Si estamos en Invierno: <i>"Abrigate que hace frio"</i>
+                  <br />
+                  - Si aún no llego el Invierno: <i>"Falta para el invierno"</i>
+                  <br />
+                  - Si ya paso el Invierno:
+                  <i>"Ya pasamos el frio, ahora calor!!!"</i>
+                  <br />
+                  Tomamos a Julio y Agosto como los meses de Invierno.
+                </p>
+                <div class="form-group">
+                  <select class="form-control" id="input-exercise8">
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                  </select>
+                </div>
+                <button
+                  type="button"
+                  id="btn-exercise8"
+                  class="btn btn-primary"
+                >
+                  Mostrar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 8 -->
+          <!-- Exercise 9 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Ingrese la hora del día
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Al ingresar un horario en el text field (id:
+                  <code class="highlighter-rouge">#input-exercise9</code>) y
+                  presionar el botón, informar:
+                  <br />
+                  - Si está entre las 7 y las 11: <i>"Es de mañana"</i>.
+                  <br />
+                  - Si está entre las 12 y las 19: <i>"Es de tarde"</i>.
+                  <br />
+                  - Si está entre las 20 y las 24 o entre las 0 y las 6:
+                  <i>"Es de noche"</i>.
+                  <br />
+                  - Si no está entre las 0 y las 24: <i>"La hora no existe"</i>.
+                </p>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-exercise9"
+                    placeholder="Hora del dia"
+                  />
+                </div>
+                <button
+                  type="button"
+                  id="btn-exercise9"
+                  class="btn btn-primary"
+                >
+                  Ingresar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 9 -->
+          <!-- Exercise 10 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Elija un mes
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Al al seleccionar un mes (id:
+                  <code class="highlighter-rouge">#input-exercise10</code>) y
+                  presionar el botón, debemos informar si tiene 28 días, 30 días
+                  o 31 días.
+                </p>
+                <div class="form-group">
+                  <select class="form-control" id="input-exercise10">
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                  </select>
+                </div>
+                <button
+                  type="button"
+                  id="btn-exercise10"
+                  class="btn btn-primary"
+                >
+                  Mostrar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 10 -->
+        </div>
+      </section>
+    </main>
+    <script src="./practice.js"></script>
+  </body>
+</html>

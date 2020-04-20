@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D.A.M. - Js | E/s de datos</title>
+    <link
+      rel="stylesheet"
+      href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="dam-container">
+      <aside class="dam-sidebar">
+        <div class="first-sidebar">
+          <nav class="languages">
+            <a href="/java-script/" class="item active">
+              <img src="/assets/images/js-logo.png" alt="JavaScript Logo" />
+            </a>
+            <a href="/php/" class="item">
+              <img src="/assets/images/php-logo.png" alt="Php Logo" />
+            </a>
+          </nav>
+        </div>
+        <nav class="second-sidebar main-nav"></nav>
+      </aside>
+      <header class="dam-header shadow">
+        <h1 class="h4">E/S de Datos</h1>
+        <a href="./index.html" class="btn btn-info">
+          Ir a la teoria
+        </a>
+      </header>
+      <section class="dam-content practice-content">
+        <div class="row">
+          <!-- Exercise 1 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Solo Mostrar mensaje
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Al presionar el botón, se debe mostrar un mensaje por
+                  <code class="highlighter-rouge"> alert()</code> con el
+                  siguiente mensaje <i>"Esto funciona de maravilla"</i>.
+                </p>
+                <button
+                  type="button"
+                  id="btn-exercise1"
+                  class="btn btn-primary"
+                >
+                  Mostrar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 1 -->
+          <!-- Exercise 2 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Ingreso un dato y lo muestro
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Al presionar el botón <i>"mostrar"</i> debemos lograr tomar
+                  datos por <code class="highlighter-rouge">prompt()</code> y
+                  luego mostrarlo con
+                  <code class="highlighter-rouge">alert()</code>.
+                </p>
+                <button
+                  type="button"
+                  id="btn-exercise2"
+                  class="btn btn-primary"
+                >
+                  Mostrar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 2 -->
+          <!-- Exercise 3 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Ingrese su nombre
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Al presionar el botón <i>"mostrar"</i>, debemos lograr tomar
+                  los datos ingresados en el text field (id:
+                  <code class="highlighter-rouge">#input-exercise3</code>) y
+                  luego mostrarlo con
+                  <code class="highlighter-rouge">alert()</code>.
+                </p>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-exercise3"
+                    placeholder="Su nombre"
+                  />
+                </div>
+                <button
+                  type="button"
+                  id="btn-exercise3"
+                  class="btn btn-primary"
+                >
+                  Mostrar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 3 -->
+          <!-- Exercise 4 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Ingrese su nombre
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Al presionar el botón <i>"mostrar"</i> debemos lograr tomar
+                  datos por <code class="highlighter-rouge">prompt()</code> y a
+                  continuacion cargar esos datos en el text field (id:
+                  <code class="highlighter-rouge">#id-exercise4</code>).
+                </p>
+                <div class="form-group">
+                  <input
+                    disabled
+                    type="text"
+                    class="form-control"
+                    id="input-exercise4"
+                    placeholder="Datos"
+                  />
+                </div>
+                <button
+                  type="button"
+                  id="btn-exercise4"
+                  class="btn btn-primary"
+                >
+                  Mostrar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 4 -->
+          <!-- Exercise 5 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Ingrese su nombre y edad
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Debemos lograr tomar nombre y edad cargados en los text fields
+                  (ids:
+                  <code class="highlighter-rouge">#input-nombre-exercise5</code>
+                  y
+                  <code class="highlighter-rouge">#input-edad-exercise5</code>)
+                  y mostrarlos concatenados (ej.:
+                  <i>"Usted se llama José y tiene 66 años"</i>) con
+                  <code class="highlighter-rouge">alert()</code>.
+                </p>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-nombre-exercise5"
+                    placeholder="Su nombre"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-edad-exercise5"
+                    placeholder="Su edad"
+                  />
+                </div>
+                <button
+                  type="button"
+                  id="btn-exercise5"
+                  class="btn btn-primary"
+                >
+                  Mostrar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 5 -->
+          <!-- Exercise 6 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Ingrese dos numeros
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Debemos lograr tomar los dos numeros ingresados en los text
+                  fields (id:
+                  <code class="highlighter-rouge"
+                    >#input-numero1-exercise6</code
+                  >
+                  y
+                  <code class="highlighter-rouge">#input-numero2-exercise6</code
+                  >), transformarlos a enteros usando
+                  <code class="highlighter-rouge">parseInt()</code> y sumarlos.
+                </p>
+                <p class="card-text">
+                  Mostar el resultado por medio de
+                  <code class="highlighter-rouge">alert()</code> ej.:
+                  <i>"la suma es 750"</i>.
+                </p>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-numero1-exercise6"
+                    placeholder="Numero uno"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-numero2-exercise6"
+                    placeholder="Numero dos"
+                  />
+                </div>
+                <button
+                  type="button"
+                  id="btn-exercise6"
+                  class="btn btn-primary"
+                >
+                  Sumar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 6 -->
+          <!-- Exercise 7 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Ingrese dos numeros
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Debemos lograr tomar los dos numeros ingresados en los text
+                  fields (id:
+                  <code class="highlighter-rouge"
+                    >#input-numero1-exercise7</code
+                  >
+                  y
+                  <code class="highlighter-rouge">#input-numero2-exercise7</code
+                  >), transformarlos a enteros usando
+                  <code class="highlighter-rouge">parseInt()</code> realizar la
+                  operación correcta y mostar el resulto por medio de
+                  <code class="highlighter-rouge">alert()</code> ej.:
+                  <i>"La resta es 750"</i>.
+                </p>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-numero1-exercise7"
+                    placeholder="Numero uno"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-numero2-exercise7"
+                    placeholder="Numero dos"
+                  />
+                </div>
+                <div class="btn-group" role="group">
+                  <button
+                    type="button"
+                    title="Sumar"
+                    id="btn-sumar-exercise7"
+                    class="btn btn-primary"
+                  >
+                    +
+                  </button>
+                  <button
+                    type="button"
+                    title="Restar"
+                    id="btn-restar-exercise7"
+                    class="btn btn-primary"
+                  >
+                    -
+                  </button>
+                  <button
+                    type="button"
+                    title="Dividir"
+                    id="btn-dividir-exercise7"
+                    class="btn btn-primary"
+                  >
+                    /
+                  </button>
+                  <button
+                    type="button"
+                    title="Multiplicar"
+                    id="btn-multiplicar-exercise7"
+                    class="btn btn-primary"
+                  >
+                    *
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 7 -->
+          <!-- Exercise 8 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Ingrese dos numeros
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Debemos lograr tomar los dos numeros ingresados en los text
+                  fields (id:
+                  <code class="highlighter-rouge"
+                    >#input-numero1-exercise8</code
+                  >
+                  y
+                  <code class="highlighter-rouge">#input-numero2-exercise8</code
+                  >), transformarlos a enteros usando
+                  <code class="highlighter-rouge">parseInt()</code>, realizar la
+                  operación correcta y mostrar el resto entre el dividendo y el
+                  divisor. ej.: <i>"El resto es 0"</i>.
+                </p>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-numero1-exercise8"
+                    placeholder="Numero uno"
+                  />
+                  <small class="form-text text-muted">
+                    Dividendo: es el número que se va a dividir
+                  </small>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-numero2-exercise8"
+                    placeholder="Numero dos"
+                  />
+                  <small class="form-text text-muted">
+                    Divisor: es el número por el cual se divide
+                  </small>
+                </div>
+                <button
+                  type="button"
+                  id="btn-exercise8"
+                  class="btn btn-primary"
+                >
+                  Mostrar resto %
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 8 -->
+          <!-- Exercise 9 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Ingrese el sueldo
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Debemos lograr tomar el sueldo ingresado en el text field (id:
+                  <code class="highlighter-rouge">#input-sueldo-exercise9</code
+                  >) , transformarlo a entero
+                  <code class="highlighter-rouge">parseInt()</code>, luego
+                  mostrar el sueldo con un aumento del 10 %. en el text field
+                  <i>resultado</i> (id: id:
+                  <code class="highlighter-rouge"
+                    >#input-resultado-exercise9</code
+                  >).
+                </p>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-sueldo-exercise9"
+                    placeholder="Ingrese sueldo"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    disabled
+                    type="text"
+                    class="form-control"
+                    id="input-resultado-exercise9"
+                    placeholder="Resultado"
+                  />
+                </div>
+                <button
+                  type="button"
+                  id="btn-exercise9"
+                  class="btn btn-primary"
+                >
+                  Mostrar aumento
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 9 -->
+          <!-- Exercise 10 -->
+          <div class="col col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Ingrese el importe
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Debemos lograr tomar el importe ingresado en el text field
+                  (id:
+                  <code class="highlighter-rouge"
+                    >#input-importe-exercise10</code
+                  >), transformarlo a entero con
+                  <code class="highlighter-rouge">parseInt()</code>, luego
+                  mostrar el importe con un descuento del 25% en el text field
+                  <i>resultado</i> (id: id:
+                  <code class="highlighter-rouge"
+                    >#input-resultado-exercise10</code
+                  >).
+                </p>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-importe-exercise10"
+                    placeholder="Ingrese importe"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    disabled
+                    type="text"
+                    class="form-control"
+                    id="input-resultado-exercise10"
+                    placeholder="Resultado"
+                  />
+                </div>
+                <button
+                  type="button"
+                  id="btn-exercise10"
+                  class="btn btn-primary"
+                >
+                  Mostrar descuento
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End exercise 10 -->
+        </div>
+      </section>
+    </main>
+    <script src="./practice.js"></script>
+  </body>
+</html>
